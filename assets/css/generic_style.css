@@ -1,0 +1,57 @@
+/* *** REGLAS GENERALES ***
+
+PARA PONER ESTILOS EN LOS ELEMENTOS
+Agregando estilos:
+
+Posicionamiento --> static, absolute, relative, fixed
+Modelo de caja (Box model) --> margin, border, padding, content
+Tipografía --> tipos, tamaños de fuente, etc
+Estilos visuales --> box-shadow, border-radius, gradient, etc
+Otros --> reglas CSS y más
+
+
+*/
+
+:root {
+  /* fuentes */
+  --font_DM: "DM Sans", serif;
+  --font_Inter: "Inter", serif;
+
+  /* colores  */
+  --bitcoin-orange: #f7931a;
+  --soft-orange: #ffe9d5;
+  --secondary-blue: #1a9af7;
+  --soft-blue: #e7f5ff;
+  --warm-black: #282623;
+  --black: #201e1c;
+  --grey: #bababa;
+  --off-white: #faf8f7;
+  --just-white: #fff;
+
+  /* fonts size */
+  --font-size-sans-small: 14px;
+  --font-size-sans-normal: 18px;
+  --font-size-sans-large: 24px;
+
+  --font-size-inter-small: 12px;
+  --font-size-inter-normal: 16px;
+
+  /* line height  */
+  --line-height-inter-small: 18px;
+  --line-height-inter-normal: 23px;
+  --line-height-inter-large: 26px;
+
+  --line-height-inter-small: 15px;
+  --line-height-inter-normal: 19px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  
+}
+html{
+    font-size: 62.5%; /* esto es para que 1rem sea igual a 10px*/
+    font-family: var(--font_DM);
+}
