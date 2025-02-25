@@ -56,6 +56,11 @@ html{
     font-family: var(--font_DM);
 }
 
+/*
+El profesor al cambiarle la dirrección al flex con flex-direction:column hizo que a su vez el justify-content cambiara su direecion de centrado. Por este motivo en las clases de mas adelante le cuesta centrar algunos contenedores. Para evitar esto añadan en el header align-items: center  con esto solucionan algunas fallas en el centrado de los contenedores.
+
+Un dato a tener en cuenta: Según la metodología BEM, los Elements deben llevar el nombre como: block__element, usando ++dos guiones bajos++ y luego el nombre. Por otro lado, los Modifiers deben llevar el nombre como: block--modifier, usando ++dos guiones++ y luego el nombre. En la clase se nombran los Elements como Modifiers, un pequeño detalle a la hora de hacer el naming de las clases
+*/
 header{
     position:relative;
     display: flex;
@@ -66,6 +71,8 @@ header{
     height: 334px;
     text-align: center;
 
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+
 }
 header img{
     width: 150px;
@@ -73,12 +80,19 @@ header img{
     margin-top: 60px; 
     align-self: center; /* centra un elemento dentro de un contenedor con display flex */
 }
-.header--title-container{
+.header__title-container{
     width: 90%;
     min-width: 288px;
     max-width: 900px;
     height: 218px;
-    margin-top: 50px;
+    margin-top: 40px;
     text-align: center; /* centra el texto*/
     align-self: center; /* centra el elemento*/
+}
+
+.header__title-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
 }
