@@ -243,6 +243,21 @@ main{
     background-color: var(--just-white);
 }
 
+/* estilos de borde de la tabla, para redondear las esquinas */
+.rb-topLeft{
+    border-top-left-radius: 10px;
+}
+.rb-topRigth{
+    border-top-right-radius: 10px;
+}
+.rb-buttomLeft{
+    border-bottom-left-radius: 10px;
+}
+.rb-buttomRigth{
+    border-bottom-right-radius: 10px;
+}
+
+/***** ********** *********/
 
 .ico-alsa{
     display: inline-block;
